@@ -4,6 +4,7 @@ import TEST_IMAGES from "./_testCommon.js";
 
 const testimg = TEST_IMAGES[0];
 
+//Smoke Test
 it("renders", () => {
     render(
         <Card
@@ -15,6 +16,7 @@ it("renders", () => {
     );
 });
 
+//Snapshot Test
 it("matches snapshot", () => {
     const { asFragment } = render(
         <Card
